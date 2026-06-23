@@ -1,7 +1,39 @@
 Grupo: Arthur, Luís e Melissa
+
 1- Respostas em pasta <imagens>
-2- a)
-3- d)
-4- c)
-5- b)
-6- c)
+
+2- a) Lógico.
+3- d) Endereço.
+4- c) Terceira forma normal.
+5- b) Errado.
+6- c) Relacionamento.
+
+7-a)
+Empregado: (Número Empregado, Nome do Empregado)
+Departamento: (Número do Departamento, Nome do Departamento)
+Gerente: (Número do Gerente, Nome do Gerente)
+Projeto: (Nome do Projeto, Dia de Início do Projeto)
+Empregado-Projeto: (Número Empregado, Número Projeto, Número de horas trabalhadas no projeto)
+
+Primeiro eu verifiquei a 1NF em relação aos atributos multivalorados e compostos, mas não era o caso.
+Logo após isso eu separei os atributos seguindo a lógica da 2NF em relação à dependência parcial,
+criando tabelas para que todas virassem totais.
+Em seguida verifiquei se havia alguma dependência transitiva, o que não era o caso,
+então conclui que estava nas 3 formas normais.
+
+b)
+Ordem_Compra: (cd_ordem_compra, dt_emissão)
+Fornecedor: ( cd_fornecedor, nm_fornecedor)
+endereço_fornecedor: (cd_fornecedor, Cidade, Bairro, Rua, Numero_casa)
+Material: (cd_material, descrição_material)
+Compra: (cd_ordem_compra, cd_fornecedor, qt_comprada, vl_unitario)
+vl_parcial: (qt_comprada, vl_unitario, vl_total_item)
+vl_total: (qt_comprada, vl_unitario, vl_total_item, vl_total_ordem)
+
+Primeiro eu verifiquei a 1NF em relação aos atributos multivalorados e compostos,
+como era o caso, criei uma tabela para o endereço do fornecedor.
+Logo após isso eu separei os atributos seguindo a lógica da 2NF em relação à dependência parcial,
+criando tabelas para que todas as parciais virassem totais.
+Em seguida verifiquei se havia alguma dependência transitiva, como era o caso,
+criei tabelas para que as transitivas também virassem totais.
+Então conclui que todas estavam nas 3 formas normais.
