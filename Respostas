@@ -37,3 +37,45 @@ criando tabelas para que todas as parciais virassem totais.
 Em seguida verifiquei se havia alguma dependência transitiva, como era o caso,
 criei tabelas para que as transitivas também virassem totais.
 Então conclui que todas estavam nas 3 formas normais.
+
+c)
+Tabela de notas fiscais: (Num_NF, Data emissão)
+Cliente: (Cod. Cliente, Nome cliente CGC cliente)
+Endereço cliente: (Cod. Cliente, Bairro, Rua, Numero da casa)
+Mercadoria: (Código mercadoria, descrição mercadoria, preço de venda)
+Venda: (Cod. Cliente, Num_NF, Quantidade vendida, Total geral da nota)
+Total das mercadorias: (Quantidade vendida, preço de venda, total da venda da mercadoria)
+
+Primeiro eu verifiquei a 1NF em relação aos atributos multivalorados e compostos,
+como era o caso, criei uma tabela para o endereço do cliente e para o total das mercadorias.
+Logo após isso eu separei os atributos seguindo a lógica da 2NF em relação à dependência parcial,
+criando tabelas para que todas as parciais virassem totais.
+Em seguida verifiquei se havia alguma dependência transitiva, como era o caso,
+criei tabelas para que as transitivas também virassem totais.
+Então conclui que todas estavam nas 3 formas normais.
+
+d)
+Inscrição: (Código do aluno, nome do aluno, ano de admissão)
+Telefone do aluno: (Código do aluno, telefone1, telefone2, etc)
+Disciplina: (Código da disciplina, nome da disciplina)
+Curso-Aluno: (Nome do curso, nome do aluno, Data da matricula)
+
+Primeiro eu verifiquei a 1NF em relação aos atributos multivalorados e compostos,
+como era o caso, criei uma tabela para o telefone de contato do aluno.
+Logo após isso eu separei os atributos seguindo a lógica da 2NF em relação à dependência parcial,
+criando tabelas para que todas as parciais virassem totais.
+Em seguida verifiquei se havia alguma dependência transitiva, o que não era o caso,
+então conclui que todas estavam nas 3 formas normais.
+
+e)
+Paciente: (num_paciente, nome_paciente)
+Quarto: (descrição_quarto, num_cômodos_quarto)
+Médico: (cód_médico, nome_médico)
+Telefone_Médico: (cód_médico, telefone1, telefone2, etc)
+
+Primeiro eu verifiquei a 1NF em relação aos atributos multivalorados e compostos,
+como era o caso, criei uma tabela para o telefone do médico.
+Logo após isso eu separei os atributos seguindo a lógica da 2NF em relação à dependência parcial,
+criando tabelas para que todas as parciais virassem totais.
+Em seguida verifiquei se havia alguma dependência transitiva, o que não era o caso,
+então conclui que todas estavam nas 3 formas normais.
